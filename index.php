@@ -9,7 +9,7 @@
         $(document).ready(function()
         {
 
-        }
+        });
     </script>
 </head>
 <body>
@@ -30,7 +30,7 @@
                     <tr id="tableMessage" name="">
                         <td id="imgUsers" name=""><img src="images/2.jpg" width="25" height="25" align="center" alt=""></td>
                         <td id="Users" name="">Руслан</td>
-                        <td id="message" name=""><div width="400">Прsaddddddddddууууууууууууууууууууууууу</div></td>
+                        <td id="message" name=""><div width="400">Приветик!</div></td>
                     </tr>
                 </table>
                 <span id="time" name="">21.00</span>
