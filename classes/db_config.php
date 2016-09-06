@@ -8,14 +8,15 @@
  */
 class db_config
 {
-    protected $connection;
+    protected $db_link;
 
-    public function con2serv($host, $login, $password)
+    public function connect()
     {
-        $connection = mysql_connect($host, $login, $password);
-        if($connection)
-            echo "<h1>Подключено!</h1>";
+       $db_link = @new mysqli("localhost", "host1506758", "fb4859ae", "host1506758");
+       if($db_link)
+           echo "<h1 style=\"color:green\">Подключено!</h1>";
         else
-            echo "<h1>Ошибка подключения!</h1>";
+            echo "<h1 style=\"color:red\">Ошибка!</h1>";
+
     }
 }

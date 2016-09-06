@@ -2,10 +2,13 @@
     require_once("classes/db_config.php");
     //$conenct = new db_config();
     //$conenct->con2serv("mysql64.hostland.ru", "localhost", "fb4859ae");
-    $connect = @new mysqli("localhost", "host1506758", "fb4859ae", "host1506758");
-    if (mysqli_connect_errno()) {
-        echo "Подключение невозможно: ".mysqli_connect_error();
-    }
+    //$connect = @new mysqli("localhost", "host1506758", "fb4859ae", "host1506758");
+    //if (mysqli_connect_errno()) {
+       // echo "Подключение невозможно: ".mysqli_connect_error();
+    //}
+
+    $conn = new db_config();
+    $conn->connect();
 ?>
 <!DOCTYPE html>
 <html lang="en">
